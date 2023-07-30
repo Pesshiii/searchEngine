@@ -44,6 +44,8 @@ Then you can use `request.json` file to specify what different sets of words are
 ```
 Finaly run the `search_engine.exe`
 
+![image](https://github.com/Pesshiii/searchEngine/assets/96686968/16ee3c26-b652-40ed-9adc-3487f806c8f6)
+
 
 and you will get your ranked answers in `answers.json` file.
 
