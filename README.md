@@ -1,13 +1,13 @@
 # Search Engine
-Your personal googlesearch for your pc
+Personal googlesearch for your pc
 ## Description
 
 This piece of software is used to find sets of words in specified .txt files using inverted index system.
 
 ## What do you use search engine for?
-It basicly works like a google or yandex bot for your own   `.txt`  files. 
+It basicly works like a google or yandex but for your own   `.txt`  files. 
 
-so you use __search engine__ if you have some phrase or  search request to find fast. 
+So you use __search engine__ if you have some phrase or  search request to find fast. 
 
 # How to use
 
@@ -73,11 +73,11 @@ so you use __search engine__ if you have some phrase or  search request to find 
 ```
 
 # About the project
-- File for configuration, searching and results are `.json` type, so this project includes library from [nlohmann](https://github.com/nlohmann/json)
+- Files for configuration, searching and results are `.json` type, so this project includes library from [nlohmann](https://github.com/nlohmann/json)
 
 - Tests are done by [google-test](https://github.com/google/googletest).
 
-- InvertedIndex class maps all the unic words in files using multithreading, so that searching then goes much faster.
+- InvertedIndex class maps all the unic words in files using `<thread>` library
 
 ## Inverted index sistem is implemented in this project:
 
