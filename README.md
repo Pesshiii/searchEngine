@@ -42,7 +42,7 @@ So you use __search engine__ if you have some phrase or  search request to find 
     }
     
 ```
-- Finaly run the code and you will get your ranked answers in `answers.json` file.
+- Finaly run the code(after building the project type in comand line, when you are in project folder, `cd build` then `.\search_engine.exe` and you will get your ranked answers in `answers.json` file.
 
 ```json
 {
