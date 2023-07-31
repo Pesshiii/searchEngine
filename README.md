@@ -11,7 +11,7 @@ so you use __search engine__ if you have some phrase or  search request to find 
 
 # How to use
 
-To use this code you first need to type in paths for text files and limit on the number of the answers in `config.json` file.
+- To use this code you first need to type in paths for text files and limit on the number of the answers in `config.json` file.
 
 ```json
 {
@@ -28,7 +28,7 @@ To use this code you first need to type in paths for text files and limit on the
         ]
     }
 ```
-Then you can use `request.json` file to specify what different sets of words are you looking for.
+- Then you can use `request.json` file to specify what different sets of words are you looking for.
 
 ```json
 {
@@ -42,12 +42,7 @@ Then you can use `request.json` file to specify what different sets of words are
     }
     
 ```
-Finaly run the `search_engine.exe`
-
-![image](https://github.com/Pesshiii/searchEngine/assets/96686968/16ee3c26-b652-40ed-9adc-3487f806c8f6)
-
-
-and you will get your ranked answers in `answers.json` file.
+- Finaly run the code and you will get your ranked answers in `answers.json` file.
 
 ```json
 {
@@ -84,7 +79,7 @@ and you will get your ranked answers in `answers.json` file.
 
 - InvertedIndex class maps all the unic words in files using multithreading, so that searching then goes much faster.
 
-## Inverted index sistem is implemented in thes project:
+## Inverted index sistem is implemented in this project:
 
 **Inverted index** is an index data structure storing a mapping from content, such as words or numbers, to its locations in a document or a set of documents. In simple words, it is a hashmap-like data structure that directs you from a word to a document.
 
