@@ -1,0 +1,6 @@
+helsinki is the capital of finland
+    oslo is the capital of norway
+stockholm is the capital of sweden
+        riga is the capital of latvia
+tallinn is the capital of estonia
+        warsaw is the capital of poland
