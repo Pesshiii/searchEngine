@@ -48,7 +48,7 @@ class InvertedIndex{
  
 };
 
-void getUniqWords(std::string text, std::vector<std::string>* unicWords){
+void getUniqWords(const std::string text, std::vector<std::string>* unicWords){
     std::stringstream s(text);
     while(!s.eof()){
         std::string buff;
@@ -65,7 +65,7 @@ void getUniqWords(std::string text, std::vector<std::string>* unicWords){
     }
 }
 
-void searchInText(std::string word, std::string text, std::vector<Entry>* wordCount, int id){
+void searchInText(const std::string word, std::string text, std::vector<Entry>* wordCount, int id){
     std::stringstream s(text);
     Entry counter = {(size_t) id, 0};
     while(!s.eof()){
@@ -98,6 +98,9 @@ void InvertedIndex::UpdateDocumentBase(std::vector<std::string> input_docs){
     for(auto docThread: docThreads){
         if(docThread->joinable())docThread->join();
     }
+    for(auto docThread: docThreads){
+        delete docThread;
+    }
     
 
     for(int i = 0; i < unicWords.size(); ++i){
@@ -110,6 +113,9 @@ void InvertedIndex::UpdateDocumentBase(std::vector<std::string> input_docs){
         }
         for(auto wordThread: wordThreads){
             if(wordThread->joinable()) wordThread->join();
+        }
+        for(auto wordThread: wordThreads){
+            delete wordThread;
         }
 
         freq_dictionary.insert(std::pair(unicWords[i], wordCount));
