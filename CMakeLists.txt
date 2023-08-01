@@ -49,4 +49,5 @@ target_link_libraries(search_engine PRIVATE nlohmann_json::nlohmann_json)
 target_link_libraries(search_engine PRIVATE gtest_main)
 
 include(GoogleTest)
-gtest_discover_tests(search_engine)
+set(DISCOVERY_MODE PRE_TEST)
+gtest_add_tests(TARGET search_engine)
