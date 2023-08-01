@@ -27,6 +27,11 @@ int main(int argc, char *argv[]){
         }
     }
     converter->putAnswers(answers);
+    
+    delete converter;
+    delete inverter;
+    delete server;
+
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }

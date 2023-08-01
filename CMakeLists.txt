@@ -36,8 +36,8 @@ enable_testing()
 
 include_directories(include
                     tests)
-file(GLOB SRC src/*.cpp)
-add_executable(search_engine ${SRC})
+file(GLOB src src/*.cpp)
+add_executable(search_engine ${src})
 
 
 
