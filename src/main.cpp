@@ -1,4 +1,6 @@
 #include "searchServer.hpp"
+#include "invertedIndex.hpp"
+#include "converterJSON.hpp"
 
 #include "gtest/gtest.h"
 
