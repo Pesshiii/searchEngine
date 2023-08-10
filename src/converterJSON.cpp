@@ -3,6 +3,7 @@
 #include "nlohmann/json.hpp"
 
 #include <iostream>
+#include <string>
 #include <vector>
 #include <fstream>
 
@@ -23,12 +24,11 @@ ConverterJSON::ConverterJSON(){
         }
         textDocuments.push_back(text);
     }
-
-    
+    version = config["config"]["version"];
     responseLimit = config["config"]["max_responses"];
 
     configFile.close();
-    //sets up cofig file
+    //sets up config file
 
 
     //
@@ -49,6 +49,8 @@ ConverterJSON::ConverterJSON(){
 std::vector<std::string> ConverterJSON::GetTextDocuments(){return textDocuments;}
 
 int ConverterJSON::GetResponsesLimit(){return responseLimit;}
+
+std::string ConverterJSON::GetVersion(){return version;}
 
 std::vector<std::string> ConverterJSON::GetRequests(){return requests;}
 

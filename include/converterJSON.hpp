@@ -13,6 +13,7 @@ class ConverterJSON {
  private:
     std::vector<std::string> textDocuments;
     std::vector<std::string> requests;
+    std::string version;
     int responseLimit;
  public:
     ConverterJSON();
@@ -28,6 +29,11 @@ class ConverterJSON {
     * @return
     */
     int GetResponsesLimit();
+    /**
+    * Метод считывает поле version
+    * @return
+    */
+    std::string GetVersion();
     /**
     * Метод получения запросов из файла requests.json
     * @return возвращает список запросов из файла requests.json
